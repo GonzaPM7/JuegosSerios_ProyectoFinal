@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Suelo
+  - BulletB
+  - BulletD
+  - BulletNormal
   layers:
   - Default
   - TransparentFX

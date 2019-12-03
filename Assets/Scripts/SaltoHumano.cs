@@ -6,7 +6,7 @@ public class SaltoHumano : MonoBehaviour
 {
 
     int NSaltos = 2;
-    public int Fuerza;
+    public float Fuerza;
     public GameObject jugador;
    // public Rigidbody2D rb;    
     

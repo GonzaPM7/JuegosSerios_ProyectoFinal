@@ -123,7 +123,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61351649137111496
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -161,7 +161,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.011274636, y: -0.034763485}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -172,7 +172,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.32, y: 0.32}
+  m_Size: {x: 0.11705649, y: 0.25047302}
   m_EdgeRadius: 0
 --- !u!114 &114087575602322912
 MonoBehaviour:
@@ -198,7 +198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ba6c5b64a3fc844e990ccb9a0fad929, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fuerza: 3
+  Fuerza: 3.3
   jugador: {fileID: 1978344996659640}
 --- !u!114 &114574072454624936
 MonoBehaviour:
@@ -217,8 +217,8 @@ MonoBehaviour:
     type: 2}
   bulletDelay: 0.5
   SpawnBala: {fileID: 4422556080755780}
-  bulletReach: 1
-  bulletSpeed: 1
+  bulletReach: 2
+  bulletSpeed: 3
   b_active: 1
 --- !u!212 &212020955459105820
 SpriteRenderer:
