@@ -8,8 +8,8 @@ public class CameraFollow : MonoBehaviour
 	// This is the object that the camera will follow
 	Transform target;
     public float alejamiento = -10f;
-
 	private Vector3 lerpedPosition;
+
     void Start()
     {
         target = GameObject.FindWithTag("Player").GetComponent<Transform>();

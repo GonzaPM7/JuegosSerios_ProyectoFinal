@@ -7,20 +7,21 @@ public class MovimientoProtagonista : MonoBehaviour
 
     public float speed;
     float moved = 0f;
-
     Rigidbody2D rb;
-
     public float climbSpeed;
-    
-
     bool control = true;
-
     bool canClimb = false;
-    
+    Animator animator;
+    private int _currentAnimation = ANIMATION_STANDING;
+
+    const int ANIMATION_STANDING = 0;
+    const int ANIMATION_WALKING = 1;
+
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator = this.GetComponent<Animator>();
 
         control = true;
     }
@@ -36,6 +37,15 @@ public class MovimientoProtagonista : MonoBehaviour
             Ladder();
     }
 
+    public void setAnimation(int animation)
+    {
+        if (_currentAnimation != animation)
+        {
+            animator.SetInteger("animation", animation);
+            _currentAnimation = animation;
+        }
+    }
+
     public void Movimiento()
     {
         moved = Input.GetAxis("Horizontal");
@@ -46,6 +56,14 @@ public class MovimientoProtagonista : MonoBehaviour
         else if (moved > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;            
+        }
+
+        if (moved != 0)
+        {
+            setAnimation(ANIMATION_WALKING);
+        } else
+        {
+            setAnimation(ANIMATION_STANDING);
         }
         
         rb.velocity = new Vector2(moved * speed, rb.velocity.y);
