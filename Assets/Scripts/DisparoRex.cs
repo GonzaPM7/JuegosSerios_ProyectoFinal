@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DisparoRex : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class DisparoRex : MonoBehaviour
     public GameObject letterB;
     public GameObject letterD;
     public GameObject normalBullet;
+    public Text selectedText;
 
     public float bulletDelay = 0.5f;
 	public Transform SpawnBala;
@@ -19,12 +21,11 @@ public class DisparoRex : MonoBehaviour
     public bool b_active = true;
     Vector3 shootDirection;
     bool canShoot;
-    
 
     void Start()
     {
-        canShoot = true;		
-
+        canShoot = true;
+        updateText();
     }
 
     void Update()
@@ -35,7 +36,6 @@ public class DisparoRex : MonoBehaviour
             DisparoNormal();
             Invoke("NewBullet", bulletDelay);
             //SoundManager.instance.PlaySound(rifleSound, 0.25f);
-
         }
 
         if (Input.GetMouseButtonUp(1) && canShoot)
@@ -48,6 +48,7 @@ public class DisparoRex : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.B))
         {
             b_active = !b_active;
+            updateText();
         }
     }
 
@@ -95,5 +96,8 @@ public class DisparoRex : MonoBehaviour
         canShoot = true;
     }
 
-   
+    private void updateText()
+    {
+        selectedText.text = "Letra seleccionada: " + (b_active ? "B" : "D");
+    }
 }

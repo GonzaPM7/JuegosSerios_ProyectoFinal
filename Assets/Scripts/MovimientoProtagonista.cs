@@ -21,7 +21,7 @@ public class MovimientoProtagonista : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator = this.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
 
         control = true;
     }
