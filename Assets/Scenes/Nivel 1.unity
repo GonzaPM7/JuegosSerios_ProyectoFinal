@@ -670,6 +670,11 @@ Prefab:
       propertyPath: m_LocalScale.x
       value: 0.4125001
       objectReference: {fileID: 0}
+    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4278190335
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -16908,6 +16913,11 @@ Prefab:
       propertyPath: letra
       value: D
       objectReference: {fileID: 0}
+    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4281280729
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -17754,6 +17764,11 @@ Prefab:
         type: 2}
       propertyPath: letra
       value: B
+      objectReference: {fileID: 0}
+    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: m_Color.rgba
+      value: 4280820703
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
