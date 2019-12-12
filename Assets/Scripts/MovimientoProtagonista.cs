@@ -38,10 +38,27 @@ public class MovimientoProtagonista : MonoBehaviour
         if (control)
         {
             Movimiento();
+            updateAnimation();
         }
 
         if (canClimb)
             Ladder();
+    }
+
+    public void updateAnimation()
+    {
+        if (rb.velocity.y > 0)
+        {
+            setAnimation(ANIMATION_JUMPING);
+        } else if (rb.velocity.y < 0) {
+            setAnimation(ANIMATION_FALLING);
+        } else if (rb.velocity.x != 0)
+        {
+            setAnimation(ANIMATION_WALKING);
+        } else
+        {
+            setAnimation(ANIMATION_STANDING);
+        }
     }
 
     public void setAnimation(int animation)
