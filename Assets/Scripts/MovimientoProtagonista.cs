@@ -14,7 +14,6 @@ public class MovimientoProtagonista : MonoBehaviour
     bool canClimb = false;
     Animator animator;
     private int _currentAnimation = ANIMATION_STANDING;
-    public int MAX_SALTOS;
     int nsaltos;
 
     const int ANIMATION_STANDING = 0;
@@ -27,7 +26,6 @@ public class MovimientoProtagonista : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
-        nsaltos = MAX_SALTOS;
 
         control = true;
     }
@@ -90,27 +88,10 @@ public class MovimientoProtagonista : MonoBehaviour
         } else
         {
             setAnimation(ANIMATION_STANDING);
-        }
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            if (nsaltos > 0)
-            {
-                vy = MAX_FUERZA;
-                nsaltos -= 1;
-            }
-        }
+        }        
 
         rb.velocity = new Vector2(moved * speed, vy);
-    }
-
-    void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.tag == "Suelo" || collision.gameObject.tag == "Suelo1" || collision.gameObject.tag == "Caja")
-        {
-            nsaltos = 2;
-        }
-    }
+    }    
 
     void Ladder()
     {
