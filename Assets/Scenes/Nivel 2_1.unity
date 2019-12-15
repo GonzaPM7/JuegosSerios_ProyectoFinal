@@ -307,7 +307,7 @@ GameObject:
   - component: {fileID: 115719435}
   m_Layer: 0
   m_Name: Texto (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -639,7 +639,7 @@ GameObject:
   - component: {fileID: 430506058}
   m_Layer: 0
   m_Name: Texto (4)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -769,7 +769,7 @@ GameObject:
   - component: {fileID: 519877442}
   m_Layer: 0
   m_Name: Texto (5)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -899,7 +899,7 @@ GameObject:
   - component: {fileID: 678387052}
   m_Layer: 0
   m_Name: Texto (4)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1110,7 +1110,7 @@ Prefab:
     - target: {fileID: 61424361167998860, guid: a6b93be0e97b4a74ea5aa180b4f56554,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 102068415388062064, guid: a6b93be0e97b4a74ea5aa180b4f56554,
         type: 2}
@@ -1126,6 +1126,15 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 61424361167998860, guid: a6b93be0e97b4a74ea5aa180b4f56554,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1594955102961566, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
@@ -1196,6 +1205,10 @@ Prefab:
       propertyPath: m_Text
       value: _ u l c e s
       objectReference: {fileID: 0}
+    - target: {fileID: 1503805692989268, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
+      propertyPath: m_TagString
+      value: Enemigo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
   m_IsPrefabParent: 0
@@ -1214,7 +1227,7 @@ GameObject:
   - component: {fileID: 758719315}
   m_Layer: 0
   m_Name: Texto (5)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1450,7 +1463,7 @@ GameObject:
   - component: {fileID: 903956316}
   m_Layer: 0
   m_Name: Texto
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1632,7 +1645,7 @@ GameObject:
   - component: {fileID: 966316905}
   m_Layer: 0
   m_Name: Texto (2)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1762,7 +1775,7 @@ GameObject:
   - component: {fileID: 995522866}
   m_Layer: 0
   m_Name: Texto
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1892,7 +1905,7 @@ GameObject:
   - component: {fileID: 1182479626}
   m_Layer: 0
   m_Name: Texto (3)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2828,7 +2841,7 @@ GameObject:
   - component: {fileID: 1316789096}
   m_Layer: 0
   m_Name: Texto (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3046,7 +3059,11 @@ Prefab:
     - target: {fileID: 61294587243222692, guid: a6b93be0e97b4a74ea5aa180b4f56554,
         type: 2}
       propertyPath: m_Enabled
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004102331196088, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
+      propertyPath: m_TagString
+      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
@@ -3066,7 +3083,7 @@ GameObject:
   - component: {fileID: 1470511407}
   m_Layer: 0
   m_Name: Texto (6)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3196,7 +3213,7 @@ GameObject:
   - component: {fileID: 1595009578}
   m_Layer: 0
   m_Name: Texto (1)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24402,7 +24419,7 @@ GameObject:
   - component: {fileID: 2138027930}
   m_Layer: 0
   m_Name: Texto (3)
-  m_TagString: Untagged
+  m_TagString: Enemigo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

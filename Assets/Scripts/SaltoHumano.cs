@@ -24,7 +24,6 @@ public class SaltoHumano : MonoBehaviour
     }*/
     void OnTriggerEnter2D(Collider2D collision)
     {
-        Debug.Log("x");
         if (collision.gameObject.tag == "Suelo" || collision.gameObject.tag == "Suelo1" || collision.gameObject.tag =="Caja")
         {
             NSaltos = 2;

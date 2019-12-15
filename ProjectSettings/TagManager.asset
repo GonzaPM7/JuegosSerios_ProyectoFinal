@@ -10,6 +10,7 @@ TagManager:
   - BulletNormal
   - EnemyD
   - EnemyB
+  - Enemigo
   layers:
   - Default
   - TransparentFX

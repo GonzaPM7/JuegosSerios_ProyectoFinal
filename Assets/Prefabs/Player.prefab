@@ -58,6 +58,7 @@ GameObject:
   - component: {fileID: 114574072454624936}
   - component: {fileID: 95132860471992840}
   - component: {fileID: 61068677278922760}
+  - component: {fileID: 114282039980437764}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -232,6 +233,25 @@ MonoBehaviour:
   speed: 2
   MAX_FUERZA: 3.3
   climbSpeed: 2
+  tiempoSincont: 0.5
+  RepeleX: 2
+  RepeleY: 2
+  health: {fileID: 0}
+--- !u!114 &114282039980437764
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1978344996659640}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3afe83cce84641a4db3ce74a0cbe1b2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  "da\xF1oColision": 20
+  "da\xF1oFallo": 10
+  player: {fileID: 1978344996659640}
 --- !u!114 &114327685286893772
 MonoBehaviour:
   m_ObjectHideFlags: 1

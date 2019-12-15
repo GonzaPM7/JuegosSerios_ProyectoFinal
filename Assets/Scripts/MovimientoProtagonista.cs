@@ -15,11 +15,15 @@ public class MovimientoProtagonista : MonoBehaviour
     Animator animator;
     private int _currentAnimation = ANIMATION_STANDING;
     int nsaltos;
+    public float tiempoSincont;
+    public float RepeleX;
+    public float RepeleY;
 
     const int ANIMATION_STANDING = 0;
     const int ANIMATION_WALKING = 1;
     const int ANIMATION_JUMPING = 2;
     const int ANIMATION_FALLING = 3;
+    public PlayerHealth health;
 
 
     void Start()
@@ -33,14 +37,45 @@ public class MovimientoProtagonista : MonoBehaviour
     void Update()
     {
 
+        health = GetComponent<PlayerHealth>();
         if (control)
         {
             Movimiento();
             updateAnimation();
         }
+        else
+        {
+            Invoke("Booleano", tiempoSincont);
+        }
 
         if (canClimb)
             Ladder();
+    }
+
+    public void Booleano()
+    {
+        control = true;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.tag == "Enemigo" && control)
+        {
+            control = false;
+
+            if (GetComponent<SpriteRenderer>().flipX == false)
+            {
+                rb.velocity = new Vector2(-RepeleX, RepeleY);
+            }
+
+
+            else if (GetComponent<SpriteRenderer>().flipX == true)
+            {
+                rb.velocity = new Vector2(RepeleX, RepeleY);
+
+            }
+            health.damageColission();
+        }
     }
 
     public void updateAnimation()
