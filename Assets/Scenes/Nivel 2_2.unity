@@ -598,6 +598,21 @@ Prefab:
       propertyPath: letra
       value: D
       objectReference: {fileID: 0}
+    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: m_Offset.x
+      value: 1.4170535
+      objectReference: {fileID: 0}
+    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: m_Size.x
+      value: 2.8354106
+      objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1780158178}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -1372,6 +1387,16 @@ Prefab:
       propertyPath: m_Text
       value: "\xE1 r _ o l"
       objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1780158178}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: letra
+      value: B
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -1980,6 +2005,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letraIncorrecta: {fileID: 1103557925}
+  health: {fileID: 1780158178}
 --- !u!4 &445240122
 Transform:
   m_ObjectHideFlags: 0
@@ -5230,6 +5256,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letraIncorrecta: {fileID: 1071800924}
+  health: {fileID: 1780158178}
 --- !u!4 &843153496
 Transform:
   m_ObjectHideFlags: 0
@@ -23712,12 +23739,12 @@ Prefab:
     - target: {fileID: 61322658614878340, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
         type: 2}
       propertyPath: m_Offset.x
-      value: 3.648003
+      value: 4.2621374
       objectReference: {fileID: 0}
     - target: {fileID: 61322658614878340, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
         type: 2}
       propertyPath: m_Size.x
-      value: 7.296008
+      value: 8.524277
       objectReference: {fileID: 0}
     - target: {fileID: 61322658614878340, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
         type: 2}
@@ -23750,6 +23777,11 @@ Prefab:
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
+    - target: {fileID: 114928535096118688, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1780158178}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
   m_IsPrefabParent: 0
@@ -24145,7 +24177,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1459236895}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.4, y: -0.15971237, z: -0.63449895}
+  m_LocalPosition: {x: -3.33, y: -0.15971237, z: -0.63449895}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 0.29999998}
   m_Children: []
   m_Father: {fileID: 445240122}
@@ -24177,7 +24209,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.3817806, y: -1.0874357}
+  m_Offset: {x: 0.23528792, y: -1.0874357}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -24188,7 +24220,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7635631, y: 1.2744303}
+  m_Size: {x: 0.47057775, y: 1.2744303}
   m_EdgeRadius: 0
 --- !u!102 &1459236899
 TextMesh:
@@ -24552,6 +24584,11 @@ Prefab:
       propertyPath: m_Text
       value: n
       objectReference: {fileID: 0}
+    - target: {fileID: 114736706190337470, guid: 2dc0c79ad43f5b244a0ebb5d91e30fd5,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1780158178}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2dc0c79ad43f5b244a0ebb5d91e30fd5, type: 2}
   m_IsPrefabParent: 0
@@ -24961,6 +24998,12 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1751196064}
   m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+--- !u!114 &1751196066 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1751196064}
+  m_Script: {fileID: 11500000, guid: 81f70d5cad6678f4a8689ff19c749cf7, type: 3}
 --- !u!1001 &1780158177
 Prefab:
   m_ObjectHideFlags: 0
@@ -25005,9 +25048,20 @@ Prefab:
       propertyPath: selectedText
       value: 
       objectReference: {fileID: 1751196065}
+    - target: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1751196066}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de9e8da2efe1bd64c80bcee9a38d0883, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1780158178 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+    type: 2}
+  m_PrefabInternal: {fileID: 1780158177}
+  m_Script: {fileID: 11500000, guid: 3afe83cce84641a4db3ce74a0cbe1b2f, type: 3}
 --- !u!1 &1792731250
 GameObject:
   m_ObjectHideFlags: 0
@@ -25038,6 +25092,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letraIncorrecta: {fileID: 144769658}
+  health: {fileID: 1780158178}
 --- !u!4 &1792731252
 Transform:
   m_ObjectHideFlags: 0

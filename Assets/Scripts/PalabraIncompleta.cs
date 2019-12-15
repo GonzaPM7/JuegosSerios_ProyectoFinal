@@ -5,9 +5,10 @@ using UnityEngine;
 public class PalabraIncompleta : MonoBehaviour {
     
     public string letra;
+    public PlayerHealth health;
 	// Use this for initialization
 	void Start () {
-		
+
 	}
 	
 	// Update is called once per frame
@@ -26,6 +27,7 @@ public class PalabraIncompleta : MonoBehaviour {
             else if (collision.gameObject.tag == "BulletD")
             {
                 Destroy(collision.gameObject);
+                health.damageFallo();
             }
         }
         else if(letra == "D")
@@ -38,6 +40,7 @@ public class PalabraIncompleta : MonoBehaviour {
             else if (collision.gameObject.tag == "BulletB")
             {
                 Destroy(collision.gameObject);
+                health.damageFallo();
             }
         }
     }

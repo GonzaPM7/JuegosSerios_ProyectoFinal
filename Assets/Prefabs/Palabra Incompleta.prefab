@@ -65,7 +65,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1294313887039692}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 9.211, y: 1.339, z: -0.68990195}
+  m_LocalPosition: {x: -0.39, y: 0.054, z: -0.68990195}
   m_LocalScale: {x: 0.4125001, y: 0.4168748, z: 1}
   m_Children:
   - {fileID: 4026856513555090}
@@ -118,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.2027082, y: -0.46601358}
+  m_Offset: {x: 1.0298635, y: -0.47217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -129,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4067202, y: 0.6171115}
+  m_Size: {x: 2.0610306, y: 0.5609319}
   m_EdgeRadius: 0
 --- !u!102 &102223853733711904
 TextMesh:
@@ -138,7 +138,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1033252484378046}
-  m_Text: a  r  _ o l
+  m_Text: a _ i o s
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -163,4 +163,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16ed416a2ed582643ad336614cfac2c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  letra: B
+  letra: D
+  health: {fileID: 0}

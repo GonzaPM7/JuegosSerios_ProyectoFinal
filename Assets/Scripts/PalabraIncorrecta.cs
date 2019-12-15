@@ -6,6 +6,7 @@ public class PalabraIncorrecta : MonoBehaviour
 {
 
     public GameObject letraIncorrecta;
+    public PlayerHealth health;
 
     // Use this for initialization
     void Start()
@@ -24,6 +25,10 @@ public class PalabraIncorrecta : MonoBehaviour
         if (letra == letraIncorrecta)
         {
             Destroy(gameObject);
+        }
+        else
+        {
+            health.damageFallo();
         }
     }
 }

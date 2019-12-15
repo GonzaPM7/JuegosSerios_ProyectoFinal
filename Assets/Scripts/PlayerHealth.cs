@@ -23,6 +23,7 @@ public class PlayerHealth : MonoBehaviour {
     {
         maxHealth -= dañoFallo;
         healthBar.TakeDamage(dañoFallo);
+        Debug.Log(maxHealth);
         checkDeath();
     }
 

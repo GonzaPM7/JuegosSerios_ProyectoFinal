@@ -379,6 +379,12 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a3203e022d02a2408f274432c313057, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &381862406 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 650106264}
+  m_Script: {fileID: 11500000, guid: 81f70d5cad6678f4a8689ff19c749cf7, type: 3}
 --- !u!1 &408567103
 GameObject:
   m_ObjectHideFlags: 0
@@ -668,6 +674,11 @@ Prefab:
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1929619879}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -16884,67 +16895,14 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 4335085543101320, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
-      propertyPath: m_LocalScale.y
-      value: 0.4168748
-      objectReference: {fileID: 0}
-    - target: {fileID: 4335085543101320, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
-      propertyPath: m_LocalScale.x
-      value: 0.4125001
-      objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1929619879}
     - target: {fileID: 1294313887039692, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
       propertyPath: m_Name
       value: Palabra Incompleta (1)
-      objectReference: {fileID: 0}
-    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Text
-      value: a _ i o s
-      objectReference: {fileID: 0}
-    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: letra
-      value: D
-      objectReference: {fileID: 0}
-    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Color.rgba
-      value: 4278213840
-      objectReference: {fileID: 0}
-    - target: {fileID: 23468392464604878, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: bdbeac3b68310804b99ffeaf555908d4, type: 3}
-    - target: {fileID: 102223853733711904, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Font
-      value: 
-      objectReference: {fileID: 12800000, guid: bdbeac3b68310804b99ffeaf555908d4,
-        type: 3}
-    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Offset.y
-      value: -0.47217
-      objectReference: {fileID: 0}
-    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Size.y
-      value: 0.5609319
-      objectReference: {fileID: 0}
-    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Offset.x
-      value: 1.0298635
-      objectReference: {fileID: 0}
-    - target: {fileID: 61725355323877664, guid: e012dab47dbdfcc48805ba50a30cc765,
-        type: 2}
-      propertyPath: m_Size.x
-      value: 2.0610306
-      objectReference: {fileID: 0}
-    - target: {fileID: 1294313887039692, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
@@ -17775,6 +17733,11 @@ Prefab:
       propertyPath: m_Name
       value: Palabra Incompleta (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1929619879}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -19241,6 +19204,17 @@ Prefab:
       propertyPath: selectedText
       value: 
       objectReference: {fileID: 99352524}
+    - target: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 381862406}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de9e8da2efe1bd64c80bcee9a38d0883, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1929619879 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+    type: 2}
+  m_PrefabInternal: {fileID: 1812556520}
+  m_Script: {fileID: 11500000, guid: 3afe83cce84641a4db3ce74a0cbe1b2f, type: 3}

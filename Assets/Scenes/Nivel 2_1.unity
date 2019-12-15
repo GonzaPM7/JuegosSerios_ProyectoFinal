@@ -457,6 +457,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   letraIncorrecta: {fileID: 678387051}
+  health: {fileID: 1226454968}
 --- !u!4 &244223343
 Transform:
   m_ObjectHideFlags: 0
@@ -1209,6 +1210,11 @@ Prefab:
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
+    - target: {fileID: 114928535096118688, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1226454968}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
   m_IsPrefabParent: 0
@@ -1609,6 +1615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   letraIncorrecta: {fileID: 1182479625}
   tipoLetraCorrecta: D
+  health: {fileID: 1226454968}
 --- !u!4 &965200567
 Transform:
   m_ObjectHideFlags: 0
@@ -2064,9 +2071,20 @@ Prefab:
       propertyPath: selectedText
       value: 
       objectReference: {fileID: 798229183}
+    - target: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+        type: 2}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1374582306}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: de9e8da2efe1bd64c80bcee9a38d0883, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1226454968 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
+    type: 2}
+  m_PrefabInternal: {fileID: 1226454967}
+  m_Script: {fileID: 11500000, guid: 3afe83cce84641a4db3ce74a0cbe1b2f, type: 3}
 --- !u!1 &1271365704
 GameObject:
   m_ObjectHideFlags: 0
@@ -3005,9 +3023,20 @@ Prefab:
       propertyPath: letra
       value: D
       objectReference: {fileID: 0}
+    - target: {fileID: 114234295619924508, guid: e012dab47dbdfcc48805ba50a30cc765,
+        type: 2}
+      propertyPath: health
+      value: 
+      objectReference: {fileID: 1226454968}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &1374582306 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+    type: 2}
+  m_PrefabInternal: {fileID: 798229182}
+  m_Script: {fileID: 11500000, guid: 81f70d5cad6678f4a8689ff19c749cf7, type: 3}
 --- !u!1001 &1411622392
 Prefab:
   m_ObjectHideFlags: 0
