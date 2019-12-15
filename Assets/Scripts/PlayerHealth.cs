@@ -8,6 +8,7 @@ public class PlayerHealth : MonoBehaviour {
     public int maxHealth;
     public int dañoColision;
     public int dañoFallo;
+    public PlayerHealthBar healthBar;
 
     // Use this for initialization
     void Start () {
@@ -21,12 +22,14 @@ public class PlayerHealth : MonoBehaviour {
     public void damageFallo()
     {
         maxHealth -= dañoFallo;
+        healthBar.TakeDamage(dañoFallo);
         checkDeath();
     }
 
     public void damageColission()
     {
         maxHealth -= dañoColision;
+        healthBar.TakeDamage(dañoColision);
         Debug.Log(maxHealth);
         checkDeath();
     }

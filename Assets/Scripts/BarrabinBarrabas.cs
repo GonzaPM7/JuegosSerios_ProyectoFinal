@@ -24,13 +24,11 @@ public class BarrabinBarrabas : MonoBehaviour {
 	void Start () {
         if (bMode)
         {
-            letter.text = "B";
-            bullet = bulletB;
+            letter.text = "B"; 
         }
         else
         {
-            letter.text = "D";
-            bullet = bulletD;
+            letter.text = "D"; 
         }
 
         InvokeRepeating("shootBullet", 2.0f, 3.0f);
@@ -43,11 +41,18 @@ public class BarrabinBarrabas : MonoBehaviour {
 
     public void shootBullet()
     {
+        int bulletType = Random.Range(1, 3);
+        if(bulletType == 1)
+            bullet = bulletB;
+        else
+            bullet = bulletD;
+
         Debug.Log("banana");
         shootDirection = player.position - gameObject.transform.position;
 
         EnemyBullet enemyBullet = Instantiate(bullet, shootTransform.position, Quaternion.Euler(new Vector3(0, 0, 0)));
         enemyBullet.barrabas = this;
+        enemyBullet.bMode = bMode;
         Destroy(enemyBullet, 5);
         Vector2 dir = shootDirection.normalized;
 
