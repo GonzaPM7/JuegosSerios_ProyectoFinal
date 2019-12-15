@@ -8,6 +8,8 @@ TagManager:
   - BulletB
   - BulletD
   - BulletNormal
+  - EnemyD
+  - EnemyB
   layers:
   - Default
   - TransparentFX
