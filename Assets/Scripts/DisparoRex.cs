@@ -98,6 +98,6 @@ public class DisparoRex : MonoBehaviour
 
     private void updateText()
     {
-        selectedText.text = "Letra seleccionada: " + (b_active ? "B" : "D");
+        selectedText.text = (b_active ? "B" : "D");
     }
 }
