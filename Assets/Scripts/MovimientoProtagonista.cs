@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MovimientoProtagonista : MonoBehaviour
 {
@@ -50,6 +51,11 @@ public class MovimientoProtagonista : MonoBehaviour
 
         if (canClimb)
             Ladder();
+
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene("Main_Menu");
+        }
     }
 
     public void Booleano()
