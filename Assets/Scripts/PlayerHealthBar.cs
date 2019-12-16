@@ -8,11 +8,17 @@ public class PlayerHealthBar : MonoBehaviour {
     public float maxHealth = 100;
     float health = 0;
     public Image barImage;
+    RectTransform rt;
+
     float currentFraction;
     float imageFill;
 
+    Vector2 startSize;
+
     // Use this for initialization
     void Start () {
+        rt = barImage.GetComponent<RectTransform>();
+        startSize = rt.sizeDelta;
 	}
 
     void Awake()
@@ -22,7 +28,6 @@ public class PlayerHealthBar : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
 	}
 
     void example()
@@ -45,6 +50,7 @@ public class PlayerHealthBar : MonoBehaviour {
         imageFill = currentFraction;
 
         barImage.fillAmount = imageFill;
+        rt.sizeDelta = new Vector2(startSize.x * currentFraction, startSize.y);
         Debug.Log("mafia" + barImage.fillAmount);
     }
 }

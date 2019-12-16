@@ -628,6 +628,31 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+        type: 2}
+      propertyPath: maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 224282815072362038, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 800
+      objectReference: {fileID: 0}
+    - target: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+        type: 2}
+      propertyPath: emptyTex
+      value: 
+      objectReference: {fileID: 2800000, guid: dc503d028a0834840852043020324119, type: 3}
+    - target: {fileID: 114632365895276912, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+        type: 2}
+      propertyPath: fullTex
+      value: 
+      objectReference: {fileID: 2800000, guid: dc503d028a0834840852043020324119, type: 3}
+    - target: {fileID: 114656678265696190, guid: 567da8e373a3e114a8e943a08b7fbc6e,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 567da8e373a3e114a8e943a08b7fbc6e, type: 2}
   m_IsPrefabParent: 0
