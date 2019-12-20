@@ -9,7 +9,7 @@ public class DisparoRex : MonoBehaviour
     public GameObject letterB;
     public GameObject letterD;
     public GameObject normalBullet;
-    public Text selectedText;
+    public TextMesh selectedText;
 
     public float bulletDelay = 0.5f;
 	public Transform SpawnBala;
