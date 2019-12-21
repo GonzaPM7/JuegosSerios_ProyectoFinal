@@ -2938,6 +2938,14 @@ Prefab:
       propertyPath: m_Color.rgba
       value: 4283228903
       objectReference: {fileID: 0}
+    - target: {fileID: 4828304827820698, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4828304827820698, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e012dab47dbdfcc48805ba50a30cc765, type: 2}
   m_IsPrefabParent: 0
@@ -4230,6 +4238,11 @@ Prefab:
         type: 2}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 102582914893720196, guid: 322416431d3231b409d4357976044432,
+        type: 2}
+      propertyPath: m_Text
+      value: d
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 322416431d3231b409d4357976044432, type: 2}
