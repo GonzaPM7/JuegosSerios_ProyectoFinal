@@ -10,6 +10,10 @@ public class PlayerHealth : MonoBehaviour {
     public int dañoFallo;
     public PlayerHealthBar healthBar;
 
+    public AudioSource source;
+    public AudioClip falloAudio;
+    public AudioClip colisionAudio;
+
     // Use this for initialization
     void Start () {
     }
@@ -24,6 +28,7 @@ public class PlayerHealth : MonoBehaviour {
         maxHealth -= dañoFallo;
         healthBar.TakeDamage(dañoFallo);
         Debug.Log(maxHealth);
+        source.PlayOneShot(falloAudio, 10);
         checkDeath();
     }
 
@@ -32,6 +37,7 @@ public class PlayerHealth : MonoBehaviour {
         maxHealth -= dañoColision;
         healthBar.TakeDamage(dañoColision);
         Debug.Log(maxHealth);
+        source.PlayOneShot(colisionAudio, 10);
         checkDeath();
     }
 

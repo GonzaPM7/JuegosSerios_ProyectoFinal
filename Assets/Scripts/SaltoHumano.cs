@@ -8,8 +8,11 @@ public class SaltoHumano : MonoBehaviour
     int NSaltos = 2;
     public float Fuerza;
     public GameObject jugador;
-   // public Rigidbody2D rb;    
-    
+    // public Rigidbody2D rb;
+
+    public AudioSource source;
+    public AudioClip saltoAudio;
+
 
     void Start()
     {
@@ -43,6 +46,7 @@ public class SaltoHumano : MonoBehaviour
             {
                 jugador.GetComponent<Rigidbody2D>().velocity= new Vector2(0, Fuerza);
                 NSaltos -= 1;
+                source.PlayOneShot(saltoAudio, 10);
             }
         }        
 

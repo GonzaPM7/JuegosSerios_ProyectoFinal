@@ -22,6 +22,10 @@ public class DisparoRex : MonoBehaviour
     Vector3 shootDirection;
     bool canShoot;
 
+    public AudioSource source;
+    public AudioClip balaAudio;
+    public AudioClip letraAudio;
+
     void Start()
     {
         canShoot = true;
@@ -66,6 +70,7 @@ public class DisparoRex : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed; //shootDirection.normalized * bulletSpeed;
         Destroy(bullet, bulletReach);
         canShoot = false;
+        source.PlayOneShot(balaAudio, 10);
     }
 
     void DisparoLetra()
@@ -89,6 +94,7 @@ public class DisparoRex : MonoBehaviour
         bullet.GetComponent<Rigidbody2D>().velocity = dir * bulletSpeed; //shootDirection.normalized * bulletSpeed;
         Destroy(bullet, bulletReach);
         canShoot = false;
+        source.PlayOneShot(letraAudio, 10);
     }
 
     private void NewBullet()
