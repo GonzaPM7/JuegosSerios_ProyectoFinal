@@ -24,6 +24,7 @@ public class MovimientoProtagonista : MonoBehaviour
     const int ANIMATION_WALKING = 1;
     const int ANIMATION_JUMPING = 2;
     const int ANIMATION_FALLING = 3;
+    const int ANIMATION_HURT = 4;
     public PlayerHealth health;
 
 
@@ -86,15 +87,23 @@ public class MovimientoProtagonista : MonoBehaviour
 
     public void updateAnimation()
     {
-        if (rb.velocity.y > 0)
+        if (control == false)
+        {
+            setAnimation(ANIMATION_HURT);
+        }
+        else if (rb.velocity.y > 0)
         {
             setAnimation(ANIMATION_JUMPING);
-        } else if (rb.velocity.y < 0) {
+        }
+        else if (rb.velocity.y < 0)
+        {
             setAnimation(ANIMATION_FALLING);
-        } else if (rb.velocity.x != 0)
+        }
+        else if (rb.velocity.x != 0)
         {
             setAnimation(ANIMATION_WALKING);
-        } else
+        }
+        else
         {
             setAnimation(ANIMATION_STANDING);
         }
@@ -116,23 +125,24 @@ public class MovimientoProtagonista : MonoBehaviour
         moved = Input.GetAxis("Horizontal");
         if (moved < 0)
         {
-            GetComponent<SpriteRenderer>().flipX = true;            
+            GetComponent<SpriteRenderer>().flipX = true;
         }
         else if (moved > 0)
         {
-            GetComponent<SpriteRenderer>().flipX = false;            
+            GetComponent<SpriteRenderer>().flipX = false;
         }
 
         if (moved != 0)
         {
             setAnimation(ANIMATION_WALKING);
-        } else
+        }
+        else
         {
             setAnimation(ANIMATION_STANDING);
-        }        
+        }
 
         rb.velocity = new Vector2(moved * speed, vy);
-    }    
+    }
 
     void Ladder()
     {
@@ -147,7 +157,7 @@ public class MovimientoProtagonista : MonoBehaviour
             rb.gravityScale = 0;
         }
         rb.gravityScale = 1;
-    }    
+    }
 
     public void CanClimb(bool can)
     {
