@@ -4192,38 +4192,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    - target: {fileID: 1895652392655204, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1432470798330578, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1153019556361480, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1480758913052880, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1521952628095256, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1202909531440956, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1720826577554596, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
-    - target: {fileID: 1210467572603236, guid: adf2fb89e372e7b43808cfc1a689f6f2, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
-      objectReference: {fileID: 0}
     - target: {fileID: 114490216916509898, guid: adf2fb89e372e7b43808cfc1a689f6f2,
         type: 2}
       propertyPath: health
@@ -4483,10 +4451,6 @@ Prefab:
     - target: {fileID: 4346713288344078, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
       propertyPath: m_RootOrder
       value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 1004102331196088, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
@@ -23351,10 +23315,6 @@ Prefab:
     - target: {fileID: 4067484752277144, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
       propertyPath: m_RootOrder
       value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 1503805692989268, guid: 7b04dc0707e8f2544801b9feaa9ce0be, type: 2}
-      propertyPath: m_TagString
-      value: Enemigo
       objectReference: {fileID: 0}
     - target: {fileID: 114928535096118688, guid: 7b04dc0707e8f2544801b9feaa9ce0be,
         type: 2}

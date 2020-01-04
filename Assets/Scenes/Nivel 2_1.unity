@@ -1137,6 +1137,18 @@ Prefab:
       propertyPath: m_TagString
       value: Enemigo
       objectReference: {fileID: 0}
+    - target: {fileID: 4089906815963224, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -1.5756712
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657733689357822, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.72
+      objectReference: {fileID: 0}
+    - target: {fileID: 1004102331196088, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
+      propertyPath: m_TagString
+      value: Suelo
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a6b93be0e97b4a74ea5aa180b4f56554, type: 2}
   m_IsPrefabParent: 0
