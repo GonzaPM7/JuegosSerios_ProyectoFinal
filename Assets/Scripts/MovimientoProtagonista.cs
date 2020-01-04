@@ -43,12 +43,13 @@ public class MovimientoProtagonista : MonoBehaviour
         if (control)
         {
             Movimiento();
-            updateAnimation();
         }
         else
         {
             Invoke("Booleano", tiempoSincont);
         }
+
+        updateAnimation();
 
         if (canClimb)
             Ladder();
@@ -130,15 +131,6 @@ public class MovimientoProtagonista : MonoBehaviour
         else if (moved > 0)
         {
             GetComponent<SpriteRenderer>().flipX = false;
-        }
-
-        if (moved != 0)
-        {
-            setAnimation(ANIMATION_WALKING);
-        }
-        else
-        {
-            setAnimation(ANIMATION_STANDING);
         }
 
         rb.velocity = new Vector2(moved * speed, vy);
