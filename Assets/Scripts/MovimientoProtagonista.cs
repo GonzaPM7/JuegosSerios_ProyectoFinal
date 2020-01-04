@@ -70,6 +70,7 @@ public class MovimientoProtagonista : MonoBehaviour
         if (collision.tag == "Enemigo" && control)
         {
             control = false;
+            GetComponent<ParticleSystem>().Emit(1);
 
             if (GetComponent<SpriteRenderer>().flipX == false)
             {
