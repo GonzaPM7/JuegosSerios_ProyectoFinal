@@ -49,7 +49,7 @@ public class DisparoRex : MonoBehaviour
             //SoundManager.instance.PlaySound(shotgunSound, 0.25f);
         }
 
-        if (Input.GetKeyDown(KeyCode.B))
+        if (Input.GetKeyDown(KeyCode.Q))
         {
             b_active = !b_active;
             updateText();

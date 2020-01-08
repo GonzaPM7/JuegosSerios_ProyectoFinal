@@ -25,6 +25,10 @@ public class Menu : MonoBehaviour {
     {
         SceneManager.LoadScene("Nivel Final");
     }
+    public void Historia()
+    {
+        SceneManager.LoadScene("Historia");
+    }
 
     public void Exit()
     {
