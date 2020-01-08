@@ -6,6 +6,7 @@ public class EnemyBullet : MonoBehaviour {
 
     public BarrabinBarrabas barrabas;
     public bool bMode;
+    public PlayerHealth health;
 
 	// Use this for initialization
 	void Start () {
@@ -22,23 +23,19 @@ public class EnemyBullet : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Destroy(gameObject);
-            // quitar vida
+            health.damageColission();
         }
-        else if ((other.gameObject.tag == "BulletB" && gameObject.tag == "EnemyB" && bMode) || (other.gameObject.tag == "BulletD" && gameObject.tag == "EnemyD" && !bMode))
+        else if ((other.gameObject.tag == "BulletNormal" && gameObject.tag == "EnemyB" && bMode) || (other.gameObject.tag == "BulletNormal" && gameObject.tag == "EnemyD" && !bMode))
         {
             barrabas.loseHealth();
             Destroy(other.gameObject);
             Destroy(gameObject);
         }
-        else if ((other.gameObject.tag == "BulletB" && gameObject.tag == "EnemyB" && !bMode) || (other.gameObject.tag == "BulletD" && gameObject.tag == "EnemyD" && bMode))
+        else if ((other.gameObject.tag == "BulletNormal" && gameObject.tag == "EnemyB" && !bMode) || (other.gameObject.tag == "BulletNormal" && gameObject.tag == "EnemyD" && bMode))
         {
             Destroy(other.gameObject);
-            // quitar vida
-        }
-        else if ((other.gameObject.tag == "BulletD" && gameObject.tag == "EnemyB") || (other.gameObject.tag == "BulletB" && gameObject.tag == "EnemyD"))
-        {
-            Destroy(other.gameObject);
-            // quitar vida
+            health.damageFallo();
+            Destroy(gameObject);
         }
     }
 }
