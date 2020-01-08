@@ -20,7 +20,7 @@ public class BarrabinBarrabas : MonoBehaviour {
     public Transform barrabin;
 
     Vector2 shootDirection;
-    public int bulletSpeed = 1;
+    public float bulletSpeed = 1;
 
     public PlayerHealth playerHealth;
 
@@ -32,11 +32,11 @@ public class BarrabinBarrabas : MonoBehaviour {
 	void Start () {
         if (bMode)
         {
-            letter.text = "B"; 
+            letter.text = "b"; 
         }
         else
         {
-            letter.text = "D"; 
+            letter.text = "d"; 
         }
 
         InvokeRepeating("shootBullet", 2.0f, 3.0f);
@@ -95,11 +95,11 @@ public class BarrabinBarrabas : MonoBehaviour {
         bMode = !bMode;
         if (bMode)
         {
-            letter.text = "B";
+            letter.text = "b";
         }
         else
         {
-            letter.text = "D";
+            letter.text = "d";
         }
         gameObject.transform.localScale = new Vector3(-gameObject.transform.localScale.x, gameObject.transform.localScale.y, gameObject.transform.localScale.z);
         letter.transform.localScale = new Vector3(-letter.transform.localScale.x, letter.transform.localScale.y, letter.transform.localScale.z);

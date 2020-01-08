@@ -198,22 +198,12 @@ Transform:
   m_Father: {fileID: 681648055}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &306058240 stripped
-SpriteRenderer:
-  m_PrefabParentObject: {fileID: 212209391622122198, guid: 2666feb67ef316343a86ce76da0ad6d9,
-    type: 2}
-  m_PrefabInternal: {fileID: 998689935}
 --- !u!114 &385547855 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114282039980437764, guid: de9e8da2efe1bd64c80bcee9a38d0883,
     type: 2}
   m_PrefabInternal: {fileID: 1587664653}
   m_Script: {fileID: 11500000, guid: 3afe83cce84641a4db3ce74a0cbe1b2f, type: 3}
---- !u!4 &633280313 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4662844397624780, guid: 2666feb67ef316343a86ce76da0ad6d9,
-    type: 2}
-  m_PrefabInternal: {fileID: 998689935}
 --- !u!1 &673111579
 GameObject:
   m_ObjectHideFlags: 0
@@ -238,7 +228,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 673111579}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.6405067, y: -1.0986421, z: 0.017520197}
+  m_LocalPosition: {x: -0.115, y: -1.0986421, z: 0.017520197}
   m_LocalScale: {x: 0.055606857, y: 0.09532596, z: 1}
   m_Children: []
   m_Father: {fileID: 681648055}
@@ -251,7 +241,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 673111579}
-  m_Text: y esquiva las otras!
+  m_Text: y esquiva las otras! Dispara con el click izquierdo.
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -388,25 +378,14 @@ Prefab:
       objectReference: {fileID: 1586602727}
     - target: {fileID: 114773816429982860, guid: 2666feb67ef316343a86ce76da0ad6d9,
         type: 2}
-      propertyPath: barrabin
-      value: 
-      objectReference: {fileID: 633280313}
-    - target: {fileID: 114773816429982860, guid: 2666feb67ef316343a86ce76da0ad6d9,
-        type: 2}
       propertyPath: playerHealth
       value: 
       objectReference: {fileID: 385547855}
     - target: {fileID: 114773816429982860, guid: 2666feb67ef316343a86ce76da0ad6d9,
         type: 2}
-      propertyPath: sprite
-      value: 
-      objectReference: {fileID: 306058240}
-    - target: {fileID: 114773816429982860, guid: 2666feb67ef316343a86ce76da0ad6d9,
-        type: 2}
-      propertyPath: flecha
-      value: 
-      objectReference: {fileID: 1942752966142008, guid: b43a4b5344ec35a4cafbd647bcafe8e1,
-        type: 2}
+      propertyPath: bulletSpeed
+      value: 0.75
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2666feb67ef316343a86ce76da0ad6d9, type: 2}
   m_IsPrefabParent: 0

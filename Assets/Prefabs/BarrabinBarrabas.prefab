@@ -220,7 +220,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1056061638493202}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.412, y: 0.53, z: -0.0150795}
+  m_LocalPosition: {x: 3.77, y: 0.489, z: -0.0150795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4840669857173016}
@@ -481,7 +481,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1469972828829704}
-  m_Text: B
+  m_Text: b
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -502,7 +502,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1313103415612954}
-  m_Text: D
+  m_Text: d
   m_OffsetZ: 0
   m_CharacterSize: 1
   m_LineSpacing: 1
@@ -523,7 +523,7 @@ TextMesh:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1701910175848064}
-  m_Text: B
+  m_Text: b
   m_OffsetZ: 0
   m_CharacterSize: 0.5
   m_LineSpacing: 1
@@ -549,6 +549,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrabas: {fileID: 0}
+  bMode: 0
+  health: {fileID: 0}
 --- !u!114 &114696358123628930
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -561,6 +563,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   barrabas: {fileID: 0}
+  bMode: 0
+  health: {fileID: 0}
 --- !u!114 &114773816429982860
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -579,7 +583,11 @@ MonoBehaviour:
   health: 3
   player: {fileID: 0}
   shootTransform: {fileID: 4158875498926288}
-  bulletSpeed: 2
+  barrabin: {fileID: 4662844397624780}
+  bulletSpeed: 1
+  playerHealth: {fileID: 0}
+  sprite: {fileID: 212209391622122198}
+  flecha: {fileID: 1942752966142008, guid: b43a4b5344ec35a4cafbd647bcafe8e1, type: 2}
 --- !u!212 &212209391622122198
 SpriteRenderer:
   m_ObjectHideFlags: 1
